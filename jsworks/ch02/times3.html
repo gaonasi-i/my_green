@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3의 배수 계산하기</title>
+    <script>
+        //1부터 30까지의 3의 배수 구하기
+        //1부터 30까지의 3배 배수 갯수 구하기
+
+        /*let count = 0; //변수의 위치 중요 for문 안에다 넣으면 값이 나타나지않음.
+    
+        for(var i=1; i<=30; i++){
+            if(i % 3 === 0){
+                count++;
+                document.write(i + " ");
+            }
+        }
+
+        document.write("<br>갯수 : " + count);*/
+
+
+        //continue 문
+
+        for(var i=1; i<=30; i++){
+            if(i % 3 !== 0)
+                continue;
+                document.write(i + " ");
+            }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

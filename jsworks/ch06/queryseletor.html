@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>queryseletor() 사용</title>
+</head>
+<body>
+    <p>이름 : <input  type="text" id="mytext" value="가오나시" disabled></p>
+    <p>클릭하면 이름이 변경됩니다.</p>
+    <button onclick="myfunction()">클릭</button>
+
+    <script>
+        function myfunction(){
+        //document.getElementById("mytext").value = "짱구";
+        let text = document.querySelector("#mytext");
+        text.value = "짱구";
+        text.style.color = "red";
+        }
+    </script>
+</body>
+</html>

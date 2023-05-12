@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch~case 문</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+        body{
+            background-color: rgb(236, 176, 63);
+            color: #fff;
+            text-align: center;
+            margin-top: 50px;
+            font-family:Gowun Dodum;
+            font-size: 2em;
+        }
+        span{
+            font-weight: bold;
+            font-size: 1.5em;
+            text-shadow: 2px 1px 1px #222;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let session = prompt("관심 세션을 선택해 주세요.", '1-마케팅, 2-개발, 3-디자인')
+
+        switch(session){
+            case "1":
+                document.write("마케팅 세션은 <span>201호</span> 에서 진행됩니다.")
+                break;
+            case "2":
+                document.write("개발 세션은 <span>201호</span> 에서 진행됩니다.")
+                break;
+            case "3":
+                document.write("디자인 세션은 <span>201호</span> 에서 진행됩니다.")
+                break;
+            default:
+                document.write("잘못 입력하셨습니다.")
+        }
+    </script>
+</body>
+</html>

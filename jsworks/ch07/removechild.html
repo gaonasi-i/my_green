@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>removeChild() 사용</title>
+    <script>
+        function myFunction(){
+            let list = document.getElementById("myList");
+            //list.removeChild(list.firstElementChild); - 맨처음 삭제
+            //list.removeChild(list.lastElementChild); // - 마지막 삭제
+            //list.removeChild(list.children[1]); // - 인덱스의 특정 위치 삭제
+            list.removeChild(list.children[0].nextElementSibling); //인덱스 옆에 형제요소가 삭제
+        }
+    </script>
+</head>
+<body>
+    <h2>removeChild() 사용</h2>
+    <button onclick="myFunction(); this.onclick=''">삭제</button>
+    <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Water</li>
+    </ul>
+</body>
+</html>

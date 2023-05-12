@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중첩 for문</title>
+    <script>
+        //5행 5열 표를 만들어서 가를 출력
+        /*for(i=1; i<6; i++){
+            document.write( i + "단<br>");
+            for(j=1; j<10; j++){
+                document.write(i + " X " + j + " = " + (i * j) + "<br>");
+            }
+        }*/
+
+        /*
+        i=0, j=0                        *
+        i=1, j=0, j=1                   **
+        i=2, j=0, j=1, j=2              ***
+        i=3, j=0, j=1, j=2, j=3         ****
+        i=4, j=0, j=1, j=2, j=3, j=4    *****
+        */
+
+        /*
+        *****
+        ****
+        ***
+        **
+        *
+        */
+
+        /*for(i=1; i<6; i++){
+            for(j=1; j<i+1; j++){
+                document.write("*");
+            }
+            document.write("<br>")
+        }*/
+        for(i=1; i<6; i++){
+            for(j=1; j<6-i; j++){
+                document.write("*");
+            }
+            document.write("<br>")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

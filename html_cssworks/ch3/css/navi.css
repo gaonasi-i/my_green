@@ -1,0 +1,29 @@
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    margin: 20px;
+    border-top: 3px solid #333;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+}
+li:hover{
+    background-color: #eee;
+}
+section{
+    padding: 20px;
+}
+nav{
+    width: 800px;
+    text-align: center;
+}
+#warp{
+    width: 1000px;
+    margin: 0 auto;
+}
+section{
+    padding-left: 100px;
+}

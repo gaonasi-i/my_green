@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addeventlistner() 함수</title>
+</head>
+<body>
+    <img src="./imges/징징이1.jpg" alt="여자 아이" id="pic">
+
+    <script>
+        let pic = document.querySelector("#pic");
+
+        //마우스를 올리면 이미지가 바뀜 여자아이 -> 남자아이
+        /*pic.onmouseover = changPic;
+        pic.onmouseout = originPic;*/
+
+        //이벤트 속성 앞에있는 on을 생략
+        pic.addEventListener("mouseover", function(){
+            pic.src = "./imges/징징이2.png";
+        });
+        pic.addEventListener("mouseout", function(){
+            pic.src = "./imges/징징이1.jpg";
+        });
+
+        /*function changPic(){
+            pic.src = "./imges/easys-2.jpg";
+        }
+
+        //마우스를 내리면 이미지가 바뀜 남자아이 -> 여자아이
+       
+        function originPic(){
+            pic.src = "./imges/easys-1.jpg";
+        }*/
+    </script>
+</body>
+</html>

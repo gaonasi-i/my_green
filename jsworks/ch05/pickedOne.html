@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math random() 객체 사용</title>
+    <style>
+        section{
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h2{
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            display: inline-block;
+            background-color: #eee;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>당첨자 발표</h2>
+    </section>
+    <script>
+        let member = parseInt(prompt("전체 응모자 수 :"));
+
+        if(member == null || isNaN(member)){
+            document.write("<p>입력이 취소되었습니다.</p>");
+        }
+        else{
+            let pickeOne = Math.floor(Math.random() * member + 1);
+
+            document.write("<p>전체 응모자 수 : " + member + "명</p>");
+            document.write("<p>당첨자 : " + pickeOne+ "명</p>");
+        }
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+#container{
+    margin: 0 auto;
+    width: 700px;
+    height: 700px;
+    background: url('./images/mic.png')
+     #fff no-repeat right bottom;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+body{
+    background-color: #02233b;
+}
+h1{
+    padding: 20px;
+    background-color: #004344;
+    color: #fff;
+}
+h3{
+    color: #f00;
+    font-weight: bold;
+    margin: 10px;
+}
+h1,h2{
+    text-align: center;
+}
+ul li{
+    list-style: none;
+}
+li{
+    line-height: 3;
+}

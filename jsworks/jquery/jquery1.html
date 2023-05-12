@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 라이브러리</title>
+    <script src="./js/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            //$(선택자).css()함수 사용
+            $('h2').css('color', 'red');
+            $('.intro').css('background', 'green');
+            //$(선택자).next()다음에 있는 요소 선택
+            //$('.intro').next('p').css('font-size', '1.2em');
+            //여러개의 스타일을 적용할때 객체 자료형 사용 {속성 : 속성값}
+            $('.intro').next('p')
+                       .css({'font-size' : '1.2em', 'color' : 'blue'})
+                       // append - 선택한 요소의 마지막 요소(중복추가 가능 html중복 추가 불가)
+                       .append("<p>고맙습니당.</p>") 
+                       .append("<img src='images/bear.jpg' alt='곰인형'>");
+
+        })
+        // alert("Hello~");
+        // window.onload = function(){
+        // document.querySelector("h2").style.color = "blue";
+        // }
+    </script>
+
+</head>
+<body>
+    <h2>어서옵숑' 3'// 방문 환영!</h2>
+    <p class="intro">내 이름은 가오나시입니다.</p>
+    <p>나는 광주에 살고 있어용.</p>
+</body>
+</html>

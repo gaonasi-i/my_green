@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판</title>
+    <style>
+        table{
+            border: 3px solid green;
+            border-collapse: collapse; /*collapse-실선을 통합시킴*/
+            width: 500px;
+            height: 50px;
+            text-align: center;
+        }
+        th,td{ /*콤마(,)-통합 선택자*/
+            border: 1px solid #00ff00;
+        }
+        .head{
+            background-color: rgb(250, 206, 149);
+        }
+    </style>
+</head>
+<body> 
+    <nav>  
+    <a href="./index.html">Home</a>
+    <a href="./tangerine.html">상품소개</a>
+    <a href="./board.html">게시판</a>
+    </nav>
+    <h2>게시판 목록</h2>
+    <table>
+        <tr class="head">
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>작성일</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>레드향 가격을 알려주세요</td>
+            <td>홍길동</td>
+            <td>2023. 3. 17</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>제주도도 배송이 되나요?</td>
+            <td>마라도</td>
+            <td>2023. 3. 17</td>
+        </tr>
+    </table>
+</body>
+</html>

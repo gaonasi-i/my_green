@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indexOf 함수</title>
+    <script>
+        let str = "Hello world, Welcome world!";
+
+        //앞에서부터 찾음
+        let n1 = str.indexOf("world"); // 6 (6번째 부터 world글자가 시작하기 때문에)
+        let n2 = str.indexOf("asia"); // -1
+        str.indexOf("asia")
+
+
+        //뒤에서부터 찾음
+        let n3 = str.lastIndexOf("world"); //21
+
+
+        let fruits = ['apple', 'banana', 'graps'];
+        let n4 = fruits.indexOf('graps');
+
+        document.write(n1 + "<br>");
+        document.write(n2 + "<br>");
+        document.write(n3 + "<br>");
+        document.write(n4 + "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

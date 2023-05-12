@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array 객체 함수</title>
+    <script>
+        let nums = [1, 2, 3];
+
+        //요소추가
+        nums.push(4); //push - 맨뒤에 추가
+
+        document.write(nums + "<br>");
+
+        //요소 삭제
+        nums.pop(); //맨 뒤 삭제
+        document.write(nums + "<br>");
+
+        //특정한 위치에서 삭제, 추가
+        let animal = ['bear', 'chiken', 'dog', 'horse'];
+        
+        animal.splice(2, 1); //몇번째-인덱스 위치, 삭제개수
+        document.write(animal + "<br>");
+
+        animal.splice(1, 0, 'cow');//인덱스위치, 삭제개수, 추가할 요소
+        document.write(animal + "<br>");
+
+        //전체 조회
+        for(let i in animal){
+            document.write(animal[i] + " ");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

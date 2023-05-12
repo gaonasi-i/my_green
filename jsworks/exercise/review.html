@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+</head>
+<body>
+    <h1 onclick="chcolor()" id="chang">자바스크립트</h1>
+    <p id="demo"></p>
+
+    <button onclick="sayHello('샛별이')">로그인</button>
+    <script>
+        //document.write("<p>안녕하세요.</p>");
+        //내장 (bulit-in)함수 ex:write, getElementById
+        document.getElementById("demo").innerHTML = "그린컴퓨터";
+
+        //사용자 정의 함수
+        //이름이 있는 함수 
+        /*function sayHello(name){
+            alert("Hello~" + name);
+        }*/
+
+        //익명 함수
+        let sayHello = function(){
+            alert("Hello~" + name);
+        }
+
+        /*function chcolor(){
+           let myH = document.getElementById("chang")
+           myH.style.color = "#00f";
+           myH.innerHTML = "HTML";
+        }*/
+        let chcolor = function chcolor(){
+           let myH = document.getElementById("chang")
+           myH.style.color = "#00f";
+           myH.innerHTML = "HTML";
+        }
+    </script>
+</body>
+</html>

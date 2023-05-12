@@ -1,0 +1,32 @@
+#warp{
+    width: 640px;
+    margin: 0 auto;
+}
+#check{
+    width: 640px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    text-align: center;
+}
+h1{
+    font-size: 1em;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin: 0; /*기본 16px을 0px로 수정함*/
+    text-align: left;
+    letter-spacing: 3px;
+}
+h2{
+    color: #f00;
+}
+.accent{
+    color: #00f;
+}
+.smalltext{
+    font-size: 0.7em;
+}
+p{
+    line-height: 2;
+    font-weight: bold;
+}

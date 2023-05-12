@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attr() 함수</title>
+    <script src="./js/jquery-3.6.4.js"></script>
+    <script>
+        $(function(){
+            $(".btn").click(function(){
+                $("img").attr("width", "250");
+            });
+            $(".small").click(function(){
+                $("img").attr("width", "150");
+            });
+            $(".pic").click(function(){
+                $("img").attr("width", "200");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h3>attr()함수는 속성을(attribute)을 생성, 변경할 수 있음</h3>
+
+    <p><img src="./images/bear.jpg" alt="곰인형"></p>
+    <button type="button" class="btn">확대</button>
+    <button type="button" class="small">축소</button>
+    <button type="button" class="pic">복귀</button>
+</body>
+</html>

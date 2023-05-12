@@ -1,0 +1,19 @@
+h1{
+    color: #0000ff;
+}
+p{
+    /*text-align: left;*/
+    /*text-align: right;*/
+    /*text-align: center;*/
+    text-align: justify;
+    line-height: 2;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    /*마우스를 링크에 올렸을때 색상을
+    바꾸거나 밑줄을 추가한다.
+    밑줄-underline*/
+    text-decoration: underline;
+}

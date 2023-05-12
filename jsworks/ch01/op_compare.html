@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비교 연산자</title>
+</head>
+<body>
+    <script>
+        // 등호(==, !=, ===, !===), 부등호(>,>=,<,<=)
+        let n1 = 10, n2 = 11;
+        let reasult;
+
+        // 비교 연산
+        reasult = n1 > n2;
+        console.log(reasult); // n1이 n2보다 크다 = 결과값 : false
+
+        //출력
+        reasult = n1 < n2;
+        console.log(reasult); // n1이 n2보다 크다 = 결과값 : true
+
+        reasult = (n1 == n2)
+        console.log(reasult); // n1이 n2와 같다 = 결과값 : false
+
+        reasult = (n1 != n2)
+        console.log(reasult); // n1이 n2와 같지않다 = 결과값 : true
+
+        easult = (n1 === n2)
+        console.log(reasult); 
+
+        // 논리 연산
+        console.log("=======")
+        reasult = (n1 > n2) && (n1 !== n2); // n1은 n2보다 크다 거짓 / n1은 n2와 같다 진실 = 결과값 : false
+        console.log(reasult);
+
+        reasult = (n1 > n2) || (n1 !== n2); // n1은 n2보다 크다 거짓 / n1은 n2와 같다 진실 = 결과값 : true
+        console.log(reasult);
+
+        reasult = !(n1 > n2)
+        console.log(reasult);
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.warp{
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+h1{
+    border-bottom: 3px solid #000;
+    padding-bottom: 5px;
+}
+p{
+    border: 2px dotted #00f;
+    padding: 10px;
+}
+.bg{
+/*상위폴더의 링크는.. / 같은위치의 폴더./ */
+background: url("../images/leaves.png") no-repeat; 
+background-size: cover;
+height: 500px;
+width: 500px;
+margin: 0 auto;
+/*반지름의 길이 - 10px*/
+border-radius: 500px;
+}

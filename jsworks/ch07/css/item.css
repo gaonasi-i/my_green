@@ -1,0 +1,45 @@
+#warpper{
+    width: 600px;
+    margin: 50px auto;
+}
+h2{
+    text-align: center;
+}
+form{
+    text-align: center;
+    background-color: #548eb8;
+    padding: 30px;
+}
+input{
+    width: 420px;
+    padding: 10px;
+}
+.btnAdd{
+    width: 50px;
+    padding: 9px;
+    border-radius: 5px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+    padding: 10px 10px 10px 40px;
+    background-color: #eee;
+    position: relative;
+}
+li:hover{
+    background-color: #ddd;
+}
+.close{
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.close:hover{
+    background: rgb(50, 120, 200);
+    color: #fff;
+    cursor: pointer;
+}

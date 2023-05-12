@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 객체의 onclick 속성</title>
+</head>
+<body>
+    <img src="./imges/짱구.png" alt="짱구" id="pic">
+    <script>
+        //토글방식의 클릭 이벤트 효과
+        let pic = document.getElementById("pic");
+        let state = true; //상태변수
+
+        pic.onclick = function(){
+            if(state){ //state == true
+                pic.src = "./imges/철수.png";
+                state = false;
+            }else{
+                pic.src = "./imges/짱구.png";
+                state = true;
+            }
+        }
+
+
+    </script>
+</body>
+</html>

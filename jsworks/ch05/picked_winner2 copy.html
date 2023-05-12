@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math random() 객체 사용</title>
+    <style>
+        section{
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h2{
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            display: inline-block;
+            background-color: #eee;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>당첨자 발표</h2>
+    </section>
+    
+    <script>
+        let member = parseInt(prompt("전체 응모자 수 : "));
+        let num = parseInt(prompt("당첨자 수 : "));
+    
+        if (member == null || num == null || isNaN(member) || isNaN(num)) {
+            document.write("<p>입력이 취소되었습니다.</p>");
+        } else {
+            let winner = new Array(num);
+            document.write("<p>전체 응모자 수 : " + member + "명</p>");
+            document.write("<p>당첨자 : ");
+    
+            for (let i = 0; i < num; i++) {
+                let pickedOne = Math.floor(Math.random() * member) + 1;
+                winner[i] = pickedOne;
+    
+                for (let j = 0; j < i; j++) {
+                    if (winner[j] == winner[i]) {
+                        i--;
+                        break;
+                    }
+                }
+            }
+    
+            for (let i = 0; i < num; i++) {
+                document.write(winner[i] + " ");
+            }
+    
+            document.write("</p>");
+        }
+    </script>
+</body>
+</html>
